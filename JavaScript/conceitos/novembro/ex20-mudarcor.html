@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mudança de Cor</title>
+
+        <style>
+            .caixa{
+                width: 200px;
+                height: 100px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="caixa"></div>
+
+
+        <script>
+            const caixa = document.querySelector('.caixa');
+
+            caixa.addEventListener('mouseover',()=>{
+                caixa.style.backgroundColor = 'red';
+            });
+
+
+            caixa.addEventListener('mouseout',()=>{
+                caixa.style.backgroundColor = 'blue';
+            });
+        </script>
+    </body>
+</html>

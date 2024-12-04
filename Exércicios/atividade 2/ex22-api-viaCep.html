@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style-api-via cep.css" />
+    <title>Consumindo API Via CEP</title>
+ 
+  </head>
+ 
+  <body id="main">
+ 
+    <div class="container">
+      <div class="form-cep">
+        <label for="cep">CEP</label>
+        <div>
+          <input type="text" id="cep" value="" />
+        </div>
+        <div>
+          <button type="button" class="w-100" onclick="enderecoCep()">Ok</button>
+        </div>
+      </div>
+    </div>
+ 
+    <div>
+      <div class="container">
+        <label for="rua" class="col-form-label">Rua</label>
+        <div class="">
+          <input type="text" readonly class="form-control" id="rua" />
+        </div>
+      </div>
+ 
+      <div class="container">
+        <label for="bairro" class="col-form-label">Bairro</label>
+        <div class="">
+          <input type="text" readonly class="form-control" id="bairro" />
+        </div>
+      </div>
+ 
+      <div class="container">
+        <label for="cidade" class="col-form-label">Cidade</label>
+        <div class="">
+          <input type="text" readonly class="form-control" id="cidade" />
+        </div>
+      </div>    
+      <button type="reset" onclick="limparCampos()">Limpar</button>
+    </div>
+  </body>
+  <script src="ex22-api-via-cep.js"></script>
+</html>
